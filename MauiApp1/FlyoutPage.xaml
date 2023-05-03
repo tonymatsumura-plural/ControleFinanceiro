@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.FlyoutPage"
+             Title="FlyoutPage">
+    
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Flyout submenu">
+            <VerticalStackLayout>                
+                <Button Text="Settings" x:Name="btnSettings" Clicked="btnSettings_Clicked"/>
+            </VerticalStackLayout>
+            
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <ContentPage>
+            <Label Text="FlyoutPage.Detail" />
+        </ContentPage>
+    </FlyoutPage.Detail>
+    
+</FlyoutPage>
